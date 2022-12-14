@@ -1,0 +1,16 @@
+<h1>Edit cat details</h1>
+
+<form action="/cats/{{_id}}/edit" method="post">
+    <lable>name</lable>
+    <input type="text" name="name" value="{{name}}">
+    <lable>breed</lable>
+    <input type="text" name="breed" value="{{breed}}">
+    <lable>Age</lable>
+    <input type="number" name="age" value="{{age}}">
+    <lable>favorite Food</lable>
+    <input type="text" name="favoriteFood" value="{{favoriteFood}}">
+
+    <button type="submit">edit info</button>
+
+</form>
+
