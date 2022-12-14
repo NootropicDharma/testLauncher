@@ -1,0 +1,13 @@
+{{#each data}}
+    <h1>
+        {{name}}
+        {{age}}
+        {{bio}}
+        <ul>Cats:
+            {{#each cats}}
+                <li><a href="/cats/{{id}}">{{name}}</a></li>
+            {{/each}}
+        </ul>
+    </h1>
+    <hr>
+{{/each}}

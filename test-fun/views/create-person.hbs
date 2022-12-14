@@ -1,0 +1,19 @@
+<h1>Create Person</h1>
+
+<form action="/person/create" method="post">
+    <lable>name</lable>
+    <input type="text" name="name">
+    <lable>age</lable>
+    <input type="number" name="age">
+    <lable>bio</lable>
+    <input type="text" name="bio">
+    <lable>cats</lable>
+
+    <select name="cats" multiple>
+        {{#each data}}
+            <option value="{{id}}">{{name}}</option>
+        {{/each}}
+    </select>
+    <button type="submit">Create</button>
+
+</form>

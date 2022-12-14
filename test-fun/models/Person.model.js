@@ -3,7 +3,7 @@ const { Schema, model } = require("mongoose");
 // TODO: Please make sure you edit the User model to whatever makes sense in this case
 const personSchema = new Schema(
   {
-    nombre: String, 
+    name: String, 
     age: String,
     bio: String, 
     cats: [
